@@ -1,0 +1,65 @@
+{
+  "name": "text-utils",
+  "version": "1.0.0",
+  "description": "A powerful text utility library for parsing, masking, and formatting text content. Parse URLs, hashtags, mentions, emails, markdown elements, and format phone numbers, dates, and more.",
+  "author": "Zachary Handley",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZachHandley/TextParsers"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build",
+    "deploy": "npm run build && npm publish --access public"
+  },
+  "keywords": [
+    "text",
+    "parser",
+    "formatter",
+    "mask",
+    "urls",
+    "hashtags",
+    "mentions",
+    "markdown",
+    "phone",
+    "date",
+    "currency",
+    "regex"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "cjs",
+      "esm"
+    ],
+    "dts": true,
+    "splitting": false,
+    "clean": true,
+    "minify": true,
+    "sourcemap": true
+  }
+}
