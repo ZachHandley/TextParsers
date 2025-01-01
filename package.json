@@ -1,12 +1,12 @@
 {
-  "name": "text-utils",
-  "version": "1.0.0",
+  "name": "ztextutils",
+  "version": "1.0.1",
   "description": "A powerful text utility library for parsing, masking, and formatting text content. Parse URLs, hashtags, mentions, emails, markdown elements, and format phone numbers, dates, and more.",
   "author": "Zachary Handley",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZachHandley/TextParsers"
+    "url": "https://github.com/ZachHandley/TextUtils"
   },
   "type": "module",
   "main": "./dist/index.js",
@@ -27,7 +27,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "prepublishOnly": "npm run build",
-    "deploy": "npm run build && npm publish --access public"
+    "deploy": "npm publish --access public"
   },
   "keywords": [
     "text",

@@ -25,17 +25,17 @@ A powerful text utility library for parsing, masking, and formatting text conten
 ## Installation
 
 ```bash
-npm install @zachhandley/text-utils
+npm install ztextutils
 # or
-yarn add @zachhandley/text-utils
+yarn add ztextutils
 # or
-pnpm add @zachhandley/text-utils
+pnpm add ztextutils
 ```
 
 ## Usage
 
 ```typescript
-import { createTextUtils } from "@zachhandley/text-utils";
+import { createTextUtils } from "ztextutils";
 
 // Create a utils instance with specific options
 const utils = createTextUtils({
