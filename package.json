@@ -1,6 +1,6 @@
 {
   "name": "ztextutils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A powerful text utility library for parsing, masking, and formatting text content. Parse URLs, hashtags, mentions, emails, markdown elements, and format phone numbers, dates, and more.",
   "author": "Zachary Handley",
   "license": "MIT",
@@ -15,7 +15,7 @@
   "exports": {
     ".": {
       "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
+      "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
   },
@@ -53,7 +53,6 @@
       "src/index.ts"
     ],
     "format": [
-      "cjs",
       "esm"
     ],
     "dts": true,
